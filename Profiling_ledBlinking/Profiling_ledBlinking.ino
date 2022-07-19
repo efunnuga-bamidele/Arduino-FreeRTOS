@@ -27,6 +27,7 @@ void redLedControllerTask(void *pvParameters)
     Serial.print("RedLEDProfiler : ");
     Serial.println(REDLEDProfiler);
     digitalWrite(RED, digitalRead(RED)^1);
+    delay(300);
   }
 }
 
@@ -39,6 +40,7 @@ void blueLedControllerTask(void *pvParameters)
     Serial.print("BlueLEDProfiler : ");
     Serial.println(BLUELEDProfiler);
     digitalWrite(BLUE, digitalRead(BLUE)^1);
+    delay(300);
   }
 }
 
@@ -51,6 +53,7 @@ void yellowLedControllerTask(void *pvParameters)
     Serial.print("YellowLEDProfiler : ");
     Serial.println(YELLOWLEDProfiler);
     digitalWrite(YELLOW, digitalRead(YELLOW)^1);
+    delay(300);
   }
 }
 
